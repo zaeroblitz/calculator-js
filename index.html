@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <link rel="stylesheet" href="background.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="inner-header flex">
+        <!-- Calculator -->
+        <div class="calculator">
+          <input type="text" class="calculator-screen" value="0" disabled />
+          <div class="calculator-keys">
+            <div class="row">
+              <button class="all-clear">AC</button>
+              <button class="percentage">%</button>
+              <button class="operator" value="/">&divide;</button>
+            </div>
+            <div class="row">
+              <button class="number" value="7">7</button>
+              <button class="number" value="8">8</button>
+              <button class="number" value="9">9</button>
+              <button class="operator" value="*">&times;</button>
+            </div>
+            <div class="row">
+              <button class="number" value="4">4</button>
+              <button class="number" value="5">5</button>
+              <button class="number" value="6">6</button>
+              <button class="operator" value="-">-</button>
+            </div>
+            <div class="row">
+              <button class="number" value="1">1</button>
+              <button class="number" value="2">2</button>
+              <button class="number" value="3">3</button>
+              <button class="operator" value="+">+</button>
+            </div>
+            <div class="row">
+              <button class="number zero-btn" value="0">0</button>
+              <button class="decimal" value=".">.</button>
+              <button class="equal-sign">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Waves Container-->
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
